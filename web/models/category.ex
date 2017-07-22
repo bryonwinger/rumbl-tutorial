@@ -1,7 +1,7 @@
 defmodule Rumbl.Category do
   use Rumbl.Web, :model
 
-  schema "catagories" do
+  schema "categories" do
     field :name, :string
 
     timestamps()
