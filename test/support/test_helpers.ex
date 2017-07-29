@@ -19,11 +19,19 @@ defmodule Rumbl.TestHelpers do
     |> Repo.insert!()
   end
 
-  def insert_category(attrs \\ %{}) do
-    changes = Dict.merge(%{name: "myname"}, attrs)
+  # def insert_category(attrs \\ %{}) do
+  #   changes = Dict.merge(%{name: "myname"}, attrs)
 
-    %Rumbl.Category{}
-    |> Rumbl.Category.changeset(changes)
-    |> Repo.insert!()
-  end
+  #   %Rumbl.Category{}
+  #   |> Rumbl.Category.changeset(changes)
+  #   |> Repo.insert!()
+  # end
+
+  # def assoc_category(video, attrs \\ %{}) do
+  #   category_cs = Dict.merge(%{name: "myname"}, attrs)
+
+  #   video
+  #   |> Ecto.build_assoc(:videos, category_cs)
+  #   Repo.insert!()
+  # end
 end
